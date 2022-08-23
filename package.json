@@ -1,0 +1,37 @@
+{
+    "name": "nft-marketplace-template",
+    "version": "1.0.0",
+    "description": "CGS-team NFT MP template",
+    "repository": "https://github.com/CodeGeneration-2020/nft-marketplace-template.git",
+    "author": "CodeGeneration-2020 <codegeneration2020@gmail.com>",
+    "packages": [
+        "frontend",
+        "contracts",
+        "backend"
+    ],
+    "scripts": {
+        "configure:hooks": "./hooks/setup-hooks",
+        "configure:hooks:windows": "bash hooks/setup-hooks",
+        "lint:all": "yarn prettier:fix && yarn lint:frontend && yarn lint:backend && yarn lint:contracts",
+        "prettier:fix": "npx prettier --write .",
+        "lint:frontend": "eslint mobile/src/**/*.js mobile/src/**/*.jsx --fix",
+        "lint:backend": "eslint backend/src/**/*.ts --fix"
+    },
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+        "@types/node": "^17.0.23",
+        "@typescript-eslint/eslint-plugin": "^5.32.0",
+        "@typescript-eslint/parser": "^5.32.0",
+        "eslint": "^7.11.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-plugin-react": "^7.26.1",
+        "prettier": "^2.6.2",
+        "typescript": "^4.6.3"
+    },
+    "dependencies": {
+        "@types/react-query": "^1.2.9",
+        "axios": "^0.27.2",
+        "eslint-plugin-typescript": "^0.14.0"
+    }
+}

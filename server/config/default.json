@@ -1,0 +1,6 @@
+
+{
+  // "mongoURI": "mongodb+srv://root:12341234@cluster0.itgqz46.mongodb.net/sgc-todo?retryWrites=true&w=majority",
+  "jwtSecret": "jwtSecretToken",
+  "jwtExpiration": 360000
+}
